@@ -1,5 +1,5 @@
+const Gpio = require('onoff').Gpio; 
 const fs = require('fs');
-const { Gpio } = require('onoff');
 let http = require('http').createServer(function handler(req, res) {
         fs.readFile(__dirname + '/index.html', function (err, data) {
           if (err) {
